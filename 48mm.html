@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Receipt example</title>
+    <style>
+      * {
+        font-size: 12px;
+        font-family: "Roboto";
+      }
+
+      td,
+      th,
+      tr,
+      table {
+        border-top: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      td.description,
+      th.description {
+        width: 75px;
+        max-width: 75px;
+      }
+
+      td.quantity,
+      th.quantity {
+        width: 40px;
+        max-width: 40px;
+        word-break: break-all;
+      }
+
+      td.price,
+      th.price {
+        width: 40px;
+        max-width: 40px;
+        word-break: break-all;
+      }
+
+      .centered {
+        text-align: center;
+        align-content: center;
+      }
+
+      .printable-area {
+        width: 181px;
+        max-width: 181px;
+      }
+
+      img {
+        max-width: inherit;
+        width: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="printable-area">
+      <img src="https://shodaimama.com/logo/logo.png" alt="Logo" />
+      <p class="centered">
+        
+        </p>
+        Invoice: #SM4789382
+        <br />Fresh <br />Saima Afreen <br />H: 18, R: 4, B: A, Banasree, Dhaka
+        <br />01567485987
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="description">Product</th>
+            <th class="quantity">Q.</th>
+            <th class="price">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="description">ARDUINO UNO R3</td>
+            <td class="quantity">1.00</td>
+            <td class="price">$25.00</td>
+          </tr>
+          <tr>
+            <td class="description">JAVASCRIPT BOOK</td>
+            <td class="quantity">2.00</td>
+            <td class="price">$10.00</td>
+          </tr>
+          <tr>
+            <td class="description">STICKER PACK</td>
+            <td class="quantity">1.00</td>
+            <td class="price">$10.00</td>
+          </tr>
+          <tr>
+            <td class="quantity"></td>
+            <td class="description">TOTAL</td>
+            <td class="price">$55.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="centered">Thanks for your purchase! <br />ShodaiMama</p>
+    </div>
+  </body>
+</html>
